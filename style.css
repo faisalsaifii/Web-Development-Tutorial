@@ -1,0 +1,92 @@
+/*Comment*/
+            /*CSS box model = padding + border + margin
+                Margin is outside padding*/
+            /*ID's*/
+            #myid{
+                border: 2px dotted red;
+                position: absolute;
+            }
+            span{
+                font-weight: bold;
+
+            }
+            h1, p {
+                background-color: aquamarine;
+            }
+            table {
+                border: 3px;
+                border-color: blue;
+                color: black;
+            }
+            tr{
+                background-color: yellow;
+            }
+            td{
+                border: 2px dashed red;
+            }
+            body{
+                background-color: black;
+                color: white;
+                background-image: url(bg.jpg);/*Default: Tile*/
+                background-repeat: repeat-y;
+                background-size: 100%;
+                background-position: 50% 60px;
+
+            }
+            a:link{
+                color: red;
+                text-decoration: green;
+            }
+            a:visited{
+                color: darkgreen;
+            }
+            a:hover{
+                background-color: blue;
+                color: white;
+                text-decoration: dashed;
+                font-weight: bold;
+            }
+            a:active{
+                background-color: orange;
+            }
+            p {
+                border: 1px solid black;
+                color: rgb(255, 0, 0);
+                text-indent: 25px;
+                line-height: 100%;
+                margin: 10%;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            h1 {
+                height: 100;
+                width: 350;
+                padding: 20px;
+                padding-top: 10%;
+                background-color: yellow;
+                color: blue;
+                text-align: center;
+                border-color: red;
+                border-width: 3px;
+                border-top-style: dashed;
+            }
+            ul{
+                font-weight: bold;
+                list-style-type: katakana;
+            }
+            ol{
+                font-style: italic;
+            }
+            div {
+                border: 2px solid red;
+                position: absolute;
+                width: 300px;
+                /*top: 40px;
+                left: 35px;*/
+            }
+            /*Classes*/
+            .redtext{
+                color: red;
+            }
+            .greentext{
+                color: green;
+            }
