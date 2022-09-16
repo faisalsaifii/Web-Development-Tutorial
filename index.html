@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- Comment -->
-<html>
+<html lang="en">
     <head>
         <!--CSS-->
         <style src = "style.css"></style>
@@ -54,7 +54,7 @@
             GO TO TARGET
         </a>
         <br/>
-        <a name = "Target">
+        <a id = "Target">
             This is the target
         </a>
         <br/>
@@ -72,7 +72,7 @@
         <img src="img.jpg" height="150" alt = ""/>
         <!--Put image in anchor to make it a link-->
         <!--Tables-->
-        <table border = "1" width = "100%" cellpadding = "10" cellspacing = "10"> 
+        <table border="1" width = "100%" cellpadding = "10" cellspacing = "10"> 
             <tr><!--Row-->
                 <th colspan = "1"><!--Table Header-->
                     <h3>F</h3>
@@ -124,5 +124,20 @@
         <form>
             <input type = "button" value = "alert" onclick = "func(2,3)">
         </form>
+
+        <!-- JAVASCRIPT -->
+
+        <!--Get Element By ID-->
+        
+        <!--Change HTML Attribute Values-->
+        <button onclick="document.getElementById('myImage').src='./assets/pic_bulbon.gif'">Turn on the light</button>
+        <img id="myImage" src="./assets/pic_bulboff.gif" alt="pic_bulboff" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='./assets/pic_bulboff.gif'">Turn off the light</button>
+
+        <!--Change HTML Styles-->
+        <p id="demo">JavaScript can change the style of an HTML element.</p>
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+        
     </body>
 </html>
