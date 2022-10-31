@@ -14,25 +14,41 @@
 // \\ -> Backslash
 
 document.write("Print stuff \n");
+console.log("Printing using console.log\n");
 		
 // VARIABLES
 // Can only start with underscore(_) or alphabets
 // Can't start with numbers or symbols
 // Can contain anything except symbols($,%,&)
 // Case sensitive
-var x = 23;
-document.write(x + " ");
+
+// VAR vs LET
+// Avoid using var keyword
+// A variable created using var gets the scope of the immediate function
+// A variable created using let gets the scope of the immediate block
+// Always use let keyword
+
+// Const : Value can't be changed
+// Let : Value changeable
+
+let x = 23;
+const one = 1;
+document.write(x, one); // Comma separated with a space
 // Global Variables
 // Types of Variables
 // 1. Numbers
-var y = -12.12;
+let y = -12.12;
 // 2. Strings
-var str = "String";
+let str = "String";
 str = "He said, \"They all good\"";
 // 3. Booleans
-var b = false;
+let b = false;
 // 4. null
-var n = null;
+let n = null;
+// 5. Undefined
+// 6. Object
+// 7. Symbol
+
 
 // Functions
 function func(para, para2){
@@ -44,7 +60,7 @@ func(1,2);
 // return statement
 function addNumbers(a,b){
     // Local Variable
-    var c = a+b;
+    let c = a+b;
     return c;
 }
 document.write(addNumbers(3,5));
