@@ -13,7 +13,8 @@
 // \''-> Double Quote
 // \\ -> Backslash
 
-document.write("Print stuff \n");
+// In the new JS version semicolon(;) isn't really needed
+// But will still run with it
 console.log("Printing using console.log\n");
 		
 // VARIABLES
@@ -33,29 +34,37 @@ console.log("Printing using console.log\n");
 
 let x = 23;
 const one = 1;
-document.write(x, one); // Comma separated with a space
+console.log("Variable : ", x, "\nConstant : ", one, "\n"); // Comma separated with a space
 // Global Variables
 // Types of Variables
 // 1. Numbers
 let y = -12.12;
+console.log("Number : ", y, "\n")
 // 2. Strings
 let str = "String";
 str = "He said, \"They all good\"";
+console.log("String : ", str, "\n")
 // 3. Booleans
 let b = false;
+console.log("Boolean : ", b, "\n")
 // 4. null
 let n = null;
+console.log("Null : ", n, "\n")
 // 5. Undefined
 // 6. Object
 // 7. Symbol
 
 
 // Functions
-function func(para, para2){
-    alert("Alert!!!" + para + para2 + "\n");
+function makeAlert(){
+    alert("Alert!!!\n");
 }
-// Calling the function
-func(1,2);
+
+function printNumber(a) {
+    console.log("Printing through a function : ", a)
+}
+// Calling the function 
+printNumber(1);
 
 // return statement
 function addNumbers(a,b){
@@ -63,15 +72,15 @@ function addNumbers(a,b){
     let c = a+b;
     return c;
 }
-document.write(addNumbers(3,5));
+console.log(addNumbers(3,5));
 
 // Calling function from another function
 
 function doFirst(){
-    document.write("First ");
+    console.log("First ");
 }
 function doSecond(){
-    document.write("Second\n");
+    console.log("Second\n");
 }
 
 function start(){
@@ -88,47 +97,47 @@ function start(){
 // && -> And
 // || -> Or
 if((1 == 2) && (2 == 2)) {
-    document.write("1 == 2 and 2 == 2\n");
+    console.log("1 == 2 and 2 == 2\n");
 }
 else {
-    document.write("1 != 2\n");
+    console.log("1 != 2\n");
 }
 
 // Nesting
 if(1==1){
     if(1==0)
-        document.write("1==0\n");
-    document.write("1==1\n");
+        console.log("1==0\n");
+    console.log("1==1\n");
 }
 
 // Switch
 switch(str) {
     case "He said, \"They all good\"":
-        document.write("First Case\n");
+        console.log("First Case\n");
         break;
     case "Hello":
-        document.write("Second Case\n");
+        console.log("Second Case\n");
         break;
     default:
-        document.write("Default\n");
+        console.log("Default\n");
 }
 
 // For loop -> Entry control loop
 for ( i = 1 ; i<4 ; i++ ) {
-    document.write(i);
+    console.log(i);
 }
 
 // While loop -> Entry control loop
 var i = 1;
 while(i<4){
-    document.write(i);
+    console.log(i);
     i++;
 }
 
 // Do While loop -> Exit control loop
 i = 1;
 do{
-    document.write(i);
+    console.log(i);
     i++;
 }while(i<4);
 

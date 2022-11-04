@@ -2,10 +2,14 @@
 <!-- Comment -->
 <html lang="en">
     <head>
+        <!--FAVICON-->
+        <link rel="icon" href="favicon.ico" />
         <!--CSS-->
-        <style src = "style.css"></style>
+        <link rel="stylesheet" href="./style.css" />
         <!--JS-->
+        <!--Can also be declared inside body-->
         <script src = "script.js"></script>
+        <!--TITLE-->
         <title>
             Index
         </title>
@@ -122,7 +126,7 @@
         </p>
         
         <form>
-            <input type = "button" value = "alert" onclick = "func(2,3)">
+            <input type = "button" value = "alert" onclick = "makeAlert()">
         </form>
 
         <!-- JAVASCRIPT -->
@@ -137,9 +141,13 @@
         <!--Change HTML Styles-->
         <p id="demo">JavaScript can change the style of an HTML element.</p>
         <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+        <!--DOM-->
+        <!--Document Object Model-->
+
+        <script src="dom.js"></script>
+        <!--Internal Scripting-->
         <script>
             document.write("Internal Scripting")
         </script>
-        
     </body>
 </html>
