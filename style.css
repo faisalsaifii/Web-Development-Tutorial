@@ -11,41 +11,21 @@
                 position: absolute;
             }
             /* Tag Selector */
-            span{
-                font-weight: bold;
-
+            body {
+                color: rgb(255, 129, 129);
+                background-color: #3a3a3a;
             }
             /* Multi Selector */
-            h1, p {
+            table, h1 {
                 background-color: aquamarine;
-            }
-            table {
-                border: 3px;
-                border-color: blue;
-                color: black;
-            }
-            tr{
-                background-color: yellow;
-            }
-            td{
-                border: 2px dashed red;
-            }
-            body{
-                background-color: black;
-                color: white;
-                background-image: url(bg.jpg);/*Default: Tile*/
-                background-repeat: repeat-y;
-                background-size: 100%;
-                background-position: 50% 60px;
-
             }
             /* Pseudo Selector */
             a:link{
                 color: red;
-                text-decoration: green;
+                text-decoration: hsl(120, 100%, 70%);
             }
             a:visited{
-                color: darkgreen;
+                color: rgb(182, 255, 182);
             }
             a:hover{
                 background-color: blue;
@@ -55,40 +35,6 @@
             }
             a:active{
                 background-color: orange;
-            }
-            p {
-                border: 1px solid black;
-                color: rgb(255, 0, 0);
-                text-indent: 25px;
-                line-height: 100%;
-                margin: 10%;
-                font-family: 'Courier New', Courier, monospace;
-            }
-            h1 {
-                height: 100;
-                width: 350;
-                padding: 20px;
-                padding-top: 10%;
-                background-color: yellow;
-                color: blue;
-                text-align: center;
-                border-color: red;
-                border-width: 3px;
-                border-top-style: dashed;
-            }
-            ul{
-                font-weight: bold;
-                list-style-type: katakana;
-            }
-            ol{
-                font-style: italic;
-            }
-            div {
-                border: 2px solid red;
-                position: absolute;
-                width: 300px;
-                /*top: 40px;
-                left: 35px;*/
             }
             /* Class Selector */
             .redtext{

@@ -38,5 +38,9 @@ console.log(getTag)
 // Convert into an array to use array functions
 // -------------------------------------------------------------------
 // Inner Text Property
+// Replacing text
 heading.innerText = "Inner Text"
+// Concatenating Text
 heading.innerText += " of H1"
+// -------------------------------------------------------------------
+// Inner HTML Property
