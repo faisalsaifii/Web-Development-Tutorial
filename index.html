@@ -4,12 +4,12 @@
 <html lang="en">
     <head>
         <!--FAVICON-->
-        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" href="./assets/favicon.ico" />
         <!--CSS-->
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
         <!--JS using external scripting-->
         <!--Can also be declared inside body-->
-        <script src = "script.js"></script>
+        <script src = "./scripts/script.js"></script>
         <!--TITLE-->
         <title>
             WebDevTutorial
@@ -85,7 +85,7 @@
         </a>
         <br/>
         <!--Image-->
-        <img src="img.jpg" height="150" alt = ""/>
+        <img src="./assets/img.jpg" height="150" alt = "image"/>
         <!--Put image in anchor to make it a link-->
         <!--Tables-->
         <table border="1" width = "100%" cellpadding = "10" cellspacing = "10"> 
@@ -138,14 +138,17 @@
         <p class = "greentext">
             Green Text
         </p>
-        
+        <!--FORM-->
         <form>
+            <input type="text" placeholder="Text Field">
+            <input type="date">
+            <input type="file">
             <input type = "button" value = "alert" onclick = "makeAlert()">
         </form>
 
         <!--DOM-->
         <!--Document Object Model-->
-        <script src="dom.js"></script>
+        <script src="./scripts/dom.js"></script>
         <!--Internal Scripting-->
         <script>
             console.log("Internal Scripting")
